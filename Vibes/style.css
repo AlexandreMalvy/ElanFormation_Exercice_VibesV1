@@ -1,0 +1,353 @@
+*{
+    box-sizing:border-box;
+}
+
+#wrapper{
+    max-width: 1024px;
+    margin:auto;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,16,47,1) 35%, rgba(36,99,112,1) 98%);
+font-family: 'Lato', sans-serif;
+}
+
+#tete{
+    display: flex;
+}
+
+#tete img{
+    width: 50px;
+    height: 50px;;
+}
+
+#menu {
+    display: flex;
+    flex:1;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+
+main{
+    background-color: rgba(255, 250, 250, 0.719);
+}
+
+ #menu a{
+     color: white;
+     text-decoration: none;
+ }
+#banniere{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+    url("img/banner.jpg") no-repeat top center ;
+    padding: 5em;
+    text-align: center;
+}
+ 
+
+ #banniere h1{
+     font-weight:200;
+     color: white;
+     font-size: 25px;
+    
+ }
+
+ #banniere p{
+     
+     color: white;
+     font-weight: 200;
+     font-size: 20px ;
+ }
+
+ #banni{
+     border: 2px solid silver;
+     color: white;
+     font-weight: 200;
+     font-size: 12px ;
+     text-decoration: none;
+     padding: 0.5em;
+ }
+
+ #about{
+     display:flex;
+     padding: 2.5em 100px;
+     ;
+ }
+
+ #rabout,#cabout,#labout{
+     flex:1;
+ }
+ #labout{
+     text-align: justify;
+ }
+ #about p{
+     font-size: 10px;
+     margin: 5px;
+ }
+
+ #about h5{
+     margin:5px;
+ }
+
+ .raboutbord{
+     border: 1px solid grey;
+     margin: 10px;
+ }
+
+ .logo{
+     height: 30px;
+     width: 30px;
+     float: left;
+ }
+ 
+ .logon{
+    height: 10px;
+    width: 10px;
+    float: left;
+ }
+
+ #galerieimage{
+     display:flex;
+     flex-wrap: wrap;
+     
+ }
+
+ #galerieimage img{
+     width: 25%;
+ }
+
+ #galeriemenu{
+    padding: 0 100px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+#galeriemenu div{
+    margin-top: 1em;
+}
+
+ #galeriemenu div a{
+     text-decoration: none;
+     margin: 0.5em;
+     color: hotpink;
+     
+ }
+
+ #galeriemenu div a:first-child{
+    color: indigo;
+
+}
+
+ .bouton {
+     border:2px solid hotpink;
+     text-decoration: none;
+     margin-top: 1em ;
+     padding: 0.5em;
+     font-size: 12px;
+     color: hotpink;
+ }
+
+ #commentaires
+ {
+     padding: 0 100px;
+ }
+ #commentaires h1{
+     margin:0;
+     text-align: center;
+     padding-top: 2em;
+ }
+
+.titlebarre{
+    width: 100px;
+    border: none;
+    margin: 0 auto;
+    height: 3px;
+    background-color: indigo;
+}
+
+.commentaire{
+    display:flex;
+    margin:50px 0;
+}
+
+.commentaire:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.secondcommentaire{
+    text-align: right;
+}
+
+.commentaire img{
+    width:100px
+}
+.commentaire p{
+    align-items: center;
+    margin: 0 10px;
+}
+
+p2{
+    font-size:12px;
+}
+
+#navcommbtn{
+    text-align:center;
+    padding-bottom: 50px;
+}
+
+#info{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+    url("img/space.jpg") no-repeat top center ;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    
+}
+
+#info h1{
+    margin-bottom: 0;
+}
+
+ #infocenter{
+    padding: 0 200px;
+ }
+
+#textinfo{
+    text-align: center;
+}
+
+#info .bouton{
+    color:white;
+    
+}
+
+#info p{
+    margin-top:50px;
+}
+
+#separation{
+    margin:50px 0;
+}
+
+#contact{
+    text-align: center;
+    padding: 1em 6em 2em
+}
+#contact h1{
+    padding-top:0.2em;
+}
+
+#contactflex{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+#contactflex>div{
+    flex:1
+}
+
+
+.contactbox p{
+    text-align: left;
+    font-size: 8px;
+}
+#contactflex div:first-child{
+padding-right:0.5em;
+}
+
+#contactflex div:last-child{
+    padding-left:0.5em;
+    }
+
+#contact input,#contact textarea{
+    display:inline-block;
+    width: 100%;
+    height: 35px;
+    border:none;
+}
+#contact #message{
+    height: 88px;
+
+}
+#contact a{
+    background-color: hotpink;
+    color: white;
+    padding: 0.5em 1em;
+    
+
+}
+
+#boutoncontact{
+    text-align: left;
+    margin-top: 1em;
+    padding-left:0;
+}
+
+#apropos{
+    background-color:rgb(34, 33, 33);
+    display:flex;
+    padding: 0 100px;
+    color:white;
+}
+#apropos div{
+    flex:1;
+    text-align:left;
+    padding:1em;
+}
+
+#apropos h3{
+    font-size: 1em;
+    margin-bottom:0;
+}
+.titlebarreapropos{
+    width: 25px;
+    border: none;
+    height: 3px;
+    background-color: indigo;
+    margin:0;
+}
+
+
+#apropos #boxboutonapropos{
+    padding-left: 0;
+}
+
+#apropos input{
+    padding:1em;
+    background-color: grey;
+    border: none;
+}
+
+#apropos input::placeholder{
+    color:white;
+    font-size:1em;
+}
+
+#apropos .bouton{
+    color:white;
+}
+
+#foot{
+    display:flex;
+    justify-content:space-between;
+    color:white;
+    padding: 0 100px;
+    
+}
+#foot a{
+    color:white;
+    text-decoration:none;
+    padding:0.5em;
+}
+
+#navfoot{
+    margin-top:1em;
+}
